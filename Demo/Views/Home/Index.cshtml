@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="data" style="display:table;" data-bind="foreach:$data">
+    <div style="display: table-row">
+        <div style="display: table-cell;padding:0.1em 1em;" data-bind="text:Name"></div>
+        <div style="display: table-cell;padding:0.1em 1em;" data-bind="text:Description"></div>
+        <div style="display: table-cell;padding:0.1em 1em;" data-bind="text:Count"></div>
+        <div style="display: table-cell;padding:0.1em 1em;" data-bind="text:Timestamp"></div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+
+        $(function() {
+            $.getJSON('/api/values', null, function(data) {
+
+                var grid = $('#data');
+                ko.applyBindings(data, grid[0]);
+
+            });
+        });
+
+    </script>
+
+}

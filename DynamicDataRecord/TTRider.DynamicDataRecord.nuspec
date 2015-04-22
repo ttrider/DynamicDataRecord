@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TTRider.DynamicDataRecord</id>
+    <version>1.0.0</version>
+    <authors>TTRider</authors>
+    <owners>TTRider</owners>
+    <licenseUrl>https://github.com/ttrider/DynamicDataRecord/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ttrider/DynamicDataRecord</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>class library to dynamically convert IDataReader/IDataRecord into strongly-typed class suitable for serialization</description>
+    <releaseNotes>
+      Demo project is available on Github:
+      https://github.com/ttrider/DynamicDataRecord
+    </releaseNotes>
+    <copyright>Copyright (C) 2014-2015 TTRider, L.L.C.</copyright>
+    <tags>dynamic code</tags>
+    <!--<dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>-->
+  </metadata>
+</package>
